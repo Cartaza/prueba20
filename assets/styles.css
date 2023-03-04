@@ -1,0 +1,647 @@
+@font-face {
+    font-family: 'quest' ;
+    src: url(./Questrial/Questrial-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Lob' ;
+    src: url(./fonts/Lobster-Regular.ttf);
+}
+
+
+
+
+:root {
+    --color-letra-chica: black;
+    --color-letra-general:  #900C3F;
+    --color-letra-titulos:#1F618D;
+  }
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: quest;
+}
+
+/* Estilos contenedor de login y carrito */
+.info{
+    height: 50px;
+    background-color: rgb(34, 33, 33);
+    padding-right: 40px;
+}
+
+.logo{
+ float: right;
+ padding: 10px;
+}
+
+.monto_carrito{
+    font-size: 1.2em;
+    padding: 0;
+    color: white;
+    line-height: 55px;
+    cursor: pointer;
+}
+
+.monto_carrito a {
+    text-decoration: none;
+    color: white;
+    line-height: 55px;
+
+}
+
+
+/* Estilos de la barra de navegaciòn */
+
+.barra_navegacion{
+    display: flex;
+    flex-wrap: wrap;
+    width: 97%;
+}
+
+.barra_navegacion h1{
+    flex-grow: 1;
+    padding:10px 0px 0px 20px;
+    margin: 0;
+    font-family: Lob ;
+    font-size: 1.8em;
+    letter-spacing: 1px;
+    
+}
+
+.barra_navegacion h1 a{
+    text-decoration: none;
+    color: darkslateblue;
+    line-height: 38px;
+    color: var(--color-letra-titulos);
+    text-shadow: 1px 1px 1px #1ba4ff;
+
+
+}
+
+
+
+.logo_tienda{
+ float: left;
+ padding: 10px 0px 0px 20px;
+}
+
+
+.barra_navegacion .lista{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 10px 0px 0px 10px;
+    padding: 0;
+}
+
+.barra_navegacion .lista .elemento_lista{
+    list-style: none;
+    padding: 10px;
+    font-weight: 600;
+}
+
+
+
+
+.barra_navegacion .lista .elemento_lista a {
+    text-decoration: none;
+    font-size: 1.2em;
+    color: var(--color-letra-chica);
+    
+} 
+
+.boton{
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    top: 67px;
+    left: 15px;
+}
+
+
+
+@media(max-width:768px){
+   
+    .barra_navegacion h1{
+        width: 100%;
+        padding-left: 70px;
+    }
+    
+   
+    .barra_navegacion .lista{
+      display: flex;
+      flex-direction: column; 
+     
+    }
+    .elemento_lista{
+        display: none;
+    }
+    
+    .boton{
+        display: block;
+    }
+
+   
+
+    .section{
+        
+        flex-wrap: wrap;
+    }
+    
+    .section .categorias {
+        display: none;
+        
+    }
+
+    .home .promos_tarjeta div{
+        margin: 0 auto;
+        
+    }
+
+
+    
+    
+
+}
+
+@media(min-width:769px){
+    .section .categorias ul{
+        width: 185px;
+        
+    }
+
+    .section .categorias h3 {
+        border-top: 1px solid #dad5d5;
+        border-bottom: 1px solid #dad5d5;
+    }
+
+    .busca{
+        position: absolute;
+        top: 0;
+        left: 20;
+    }
+ 
+   
+}
+
+@media(min-width: 769px) and (max-width: 802px){
+
+    .home .promos_tarjeta div{
+        margin: 0 auto;
+        
+    }
+}
+
+
+@media(min-width: 460px){
+
+    .home .img_home{
+       height: 300px;
+    }
+}
+
+
+@media(min-width: 950px){
+    .home .img_home{
+       height: 400px;
+       background-position: 0px -200px;
+    }
+}
+
+
+/* Estilos del contenedor de la tienda */
+
+.section{
+    margin-top: 20px;
+    display: flex;
+}
+
+/* Estilos contenedor de navegacion categorias */
+
+.section .categorias {
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    margin: 10px 10px 10px 20px;
+    border-radius: 5px;
+}
+
+
+.section .categorias h3 {
+    margin: 0;
+    padding: 10px;
+    font-size: 1.3em;
+    margin-bottom: 5px;
+
+   
+}
+
+
+.section .categorias ul{
+    margin: 0;
+    padding: 0;
+    padding:0px 15px 15px 15px;
+    font-size: 1.2em;
+    font-weight: 600;
+   
+}
+
+
+
+.section .categorias ul li{
+    list-style: none;
+    padding: 10px;
+    
+}
+
+
+.section .categorias ul li a{
+    text-decoration: none;
+    color: var(--color-letra-chica);
+}
+
+/* Estilos contenedor de productos */
+
+.section .productos{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px, rgba(0, 0, 0, 0.16) 0px -3px 6px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.section .productos .producto{
+    width: 200px;
+    height: 300px;
+    padding: 5px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.2em;
+    margin: 10px;
+    border-bottom: 1px solid grey;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    border-radius: 5px;
+}
+
+
+
+.section .productos .producto img{
+    width: 180px;
+    height: 140px;
+}
+
+.section .productos .producto span{
+    color: darkred;
+}
+
+/*Estilos del home*/
+
+.home{
+    /*box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px, rgba(0, 0, 0, 0.16) 0px -3px 6px;*/
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+}
+
+.home h3{
+    padding-top: 20px;
+    letter-spacing: 1px;
+
+}
+
+.home .img_home{
+    flex-grow: 2;
+    background-image: url(./img/supermercado.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 0px -50px;
+    min-height: 200px;
+    overflow: hidden;
+    padding-bottom: 40px;
+}
+
+
+.home .promos_tarjeta{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+
+.home .promos_tarjeta img{
+    width: 200px;
+    padding:0px 20px 0px 20px
+}
+
+
+.tarjeta{
+    color: darkred;
+    font-weight: 600;
+}
+
+.cuotas{
+    color: navy;
+    font-weight: 600;
+}
+
+/*Estilos generales de las demàs pàginas*/
+.section1{
+    text-align: center;
+}
+.section1 h2{
+    color: var(--color-letra-titulos);
+    font-weight: 600;
+    font-size: 1.8em;
+    text-align: center;
+    font-family: Lob;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 1px #1ba4ff;
+}
+
+
+/* Estilos del formulario LOGIN  y REGISTRO*/
+
+.section1 .login1{
+    width: 70%;
+    min-height: 270px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    margin: 0px auto;
+    padding-top: 10px;
+    font-weight: 600;
+    
+}
+
+
+.section1 .registro{
+    width: 70%;
+    min-height: 300px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    margin: 0px auto;
+    padding-top: 10px;
+    font-weight: 600;
+    
+}
+
+.section1 .login1 label,  .section1 .registro label{
+    display: block;
+    width:100%;
+    padding: 10px;
+}
+
+.section1 .login1 input,  .section1 .registro input{
+
+    width:40%;
+    margin: 0px auto;
+    border-radius: 5px;
+    height: 20px;
+}
+
+
+.section1 .login1 button{
+    width: 80px;
+     
+ }
+
+.section1 .registro button{
+   width: 120px;
+    
+}
+
+.button-29 {
+  margin-top: 20px;
+  align-items: center;
+  background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
+  border: 0;
+  border-radius: 6px;
+  box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  height: 35px;
+  justify-content: center;
+  transition: box-shadow .15s,transform .15s;
+  font-size: 18px;
+}
+
+.button-29:focus {
+  box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+}
+
+.button-29:hover {
+  box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.button-29:active {
+  box-shadow: #3c4fe0 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+/* Estilos del footer */
+
+
+footer{
+    background-color: rgb(31, 30, 29);
+    height: 250px;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer h4{
+    padding: 40px 0px 20px 0px;
+    font-size: 1.7em;
+    margin: 0;
+}
+
+
+
+
+/*Lorem jaj*/
+
+.lorem{
+    text-align: center;
+    height: 300px;
+}
+
+
+/*Estilos del carrito */
+
+.contenedor_carrito{
+    margin: 0px auto;
+    display:flex;
+    flex-wrap:wrap;
+    padding:10px 50px ;
+    font-weight: 600;
+    font-size: 1.1em;
+ 
+    
+    }
+
+
+    
+    .contenedor_carrito .informacion_carrito, .contenedor_carrito .informacion_pago{
+    flex-grow: 1;
+    text-align:center;
+    margin:10px;
+    }
+    
+        
+    .informacion_carrito h3, .informacion_pago h3 {
+    font-family : Lob;
+    letter-spacing:1px;
+    margin:0;
+    margin:5px;
+    }
+    
+    
+    .informacion_pago div {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    margin: 0px auto;
+    padding-top:10px;
+    max-width:400px;
+    }
+    
+    .total_compra {
+    font-size: 1.2em;
+    }
+    
+    .total_compra span{
+    color:darkred;
+    }
+    
+    .informacion_pago div p span {
+    color:darkred;
+    }
+    
+    
+    /*Estilos detalle de compra y envío*/
+    
+    
+    .informacion_carrito div .producto_carrito{
+    border-bottom: 1px solid #ccc;
+    margin: 10px;
+    text-align:left;
+    }
+    
+    .informacion_carrito div .producto_carrito  p span{
+    color: darkred;
+    }
+    
+    .detalle_envio{
+    padding:10px;
+    background-color: lightblue;
+    border-radius: 5px;
+    margin-top: 20px;
+    }
+    
+    .detalle_envio img{
+    padding-bottom:10px;
+    }
+    
+    .detalle_envio input{
+    margin:10px;
+    border-radius:5px;
+    }
+    
+    .postal{
+    width: 80px !important;
+    height: 30px !important;
+    }
+    
+    .mp{
+        width: 160px;
+        height: 55px;
+    }
+
+
+    /* Estilos del formulario SEGUIMIENTO DE ENVIOS */
+
+    .form_seguimiento{
+        width: 300px;
+        margin: 0px auto;
+        padding: 50px;
+        font-weight: 600;
+        font-size: 1.1em;
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    }
+
+    .form_seguimiento input{
+        margin-top: 20px;
+        border-radius: 5px;
+        height: 25px;
+        
+    }
+
+    .form_seguimiento button{
+        width: 100px;
+        height: 35px;
+        
+    }
+
+
+    /*Estilos del contenedor mi perfil*/
+    .mi_perfil{
+       display: none;
+       position: absolute;
+       right: 80px;
+       top: 55px;
+       background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
+       box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+       border-radius: 5px;
+       padding-left: 0;
+       padding-right: 15px;
+       z-index: 2;
+    }
+
+    .mi_perfil ul{
+        padding-top: 10px;
+        margin: 0px auto;
+    }
+
+    .mi_perfil ul li{
+        list-style: none;
+        padding-right: 5px;
+        padding-bottom: 15px;
+    }
+
+    .mi_perfil ul li a{
+        text-decoration: none;
+        font-size: 1.1em;
+        font-weight: 600;
+        color: black;
+        font-family: Lob;
+        letter-spacing: 1px;
+        
+       
+    }
+
+
+
+   
+/*Estilos del buscador*/
+.busca input{
+    height: 25px;
+    border-radius: 10px;
+}
+
+
+.form_search{
+    display: flex;
+
+}
+.busca button{
+    background: transparent;
+    border: none;
+}  

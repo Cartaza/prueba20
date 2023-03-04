@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tienda online</title>
+        <link rel="icon" type="image/x-icon" href="./assets/img/tienda.png">
+        <!--LINK Estilos css-->
+        <link rel="stylesheet" href="./assets/styles.css">
+        <!--lINKS Jquery y jquery UI-->
+        <link rel="stylesheet" href="./js/jquery-ui-1.13.2.custom/jquery-ui.min.css">
+        <link rel="stylesheet" href="./js/jquery-ui-1.13.2.custom/jquery-ui.structure.min.css">
+        <link rel="stylesheet" href="./js/jquery-ui-1.13.2.custom/jquery-ui.theme.min.css">
+    </head>
+<body>
+
+<!--Contenedor mi perfil-->
+<div class="mi_perfil">
+    <ul>
+        <li><a href="mi_perfil.html">Mi perfil</a></li>
+        <li><a href="">Cerrar sesiòn</a></li>
+    </ul>
+</div>
+
+
+<!--BARRA con BUSCADOR, LOGIN, MI PERFIL Y CARRITO DE COMPRAS-->
+<div class="info">
+    <a class="logo_tienda" href="index.html"><img  src="./assets/img/tienda.png"  alt="logo tienda"> </a>
+    <span class="logo monto_carrito"> <a href="carrito.html">$0.00 </a></span>
+    <a class="logo carrito" href="carrito.html"><img src="./assets/img/carrito-de-compras.png" alt="Logo carrito de compras"></a>
+    <a class="logo login"><img src="./assets/img/usuario.png" alt="Logo usuario logueado"></a>
+    <a class="logo signin" href="login.html"><img src="./assets/img/iniciar-sesion.png" alt="Logo iniciar sesion"></a>
+</div>
+
+<!--Icono MENU HAMBURGUESA-->
+<img class="boton" src="./assets/img/menu.png" alt="menu hamburguesa">
+
+
+
+
+<!--Barra de NAVEGACIÒN-->
+     <nav class="barra_navegacion">
+        <h1><a href="index.html"> Tienda online  </a></h1>
+        <ul class="lista">
+            <li class="elemento_lista busca">
+                <form action="" class="form_search">
+                    <input type="text" placeholder="Busca por ej: pañales">
+                    <!--Icono LUPA-->
+                    <button type="submit" class="lupa"><img src="./assets/img/lupa.png" alt="logo_lupa"></button>
+               </form>
+            </li>
+            <li class="elemento_lista"><a href="index.html">Inicio</a></li>
+            <li class="elemento_lista"><a href="tienda.html">Tienda</a></li>
+            <li class="elemento_lista"><a href="segui_tu_envio.html">Segui tu envìo</a></li>
+            <li class="elemento_lista"><a href="about.html">Sobre nosotros</a></li>
+            <li class="elemento_lista"><a href="contacto.html">Contacto</a></li>
+        </ul>
+     </nav>    
+
+ <div class="section1">
+  <h2> ¿Quienes somos?</h2>
+
+  <div class="lorem">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita porro vel neque ad. Ad rerum distinctio tenetur exercitationem in minima? Facilis, officia modi. Error ullam quos quaerat quasi natus voluptatibus?
+   </div>
+ </div>
+
+ <footer>
+    <h4>Tienda online  </h4> 
+    <a href="index.html"><img  src="./assets/img/tienda.png"  alt="logo tienda" width="30px"> </a>
+    <p>atencionalcliente@tiendaonline.com</p>
+    <p> Calle 555, Còrdoba, Argentina  -   Telèfonos: 351-444444   - 3543-55555</p>
+    
+    <small>Todos los derechos reservados 2023</small>
+</footer>
+
+ 
+    <script src="./js/jquery.js"></script>
+    <script src="./js/jquery-ui-1.13.2.custom/jquery-ui.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
